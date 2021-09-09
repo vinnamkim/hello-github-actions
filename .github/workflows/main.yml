@@ -9,7 +9,7 @@ jobs:
       - name: Simple Dotenv
         uses: xom9ikk/dotenv@v1.0.2
         with:
-          path: ./
+          path: ./env
       - uses: actions/checkout@v1
       - uses: ./action-a
         with:
