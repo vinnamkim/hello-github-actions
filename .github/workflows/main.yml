@@ -6,7 +6,9 @@ jobs:
     name: Hello world action
     runs-on: ubuntu-latest
     steps:
+      - name: Dotenv Action
+        uses: falti/dotenv-action@v0.2.7
       - uses: actions/checkout@v1
       - uses: ./action-a
         with:
-          MY_NAME: ${{ env.DOCKER_VERSION }}
+          MY_NAME: ${{ env.docker_version }}
