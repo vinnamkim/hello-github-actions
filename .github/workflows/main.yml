@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Dotenv Action
         uses: falti/dotenv-action@v0.2.7
+        with:
+          path: ./.env
       - uses: actions/checkout@v1
       - uses: ./action-a
         with:
