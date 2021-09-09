@@ -13,4 +13,4 @@ jobs:
           path: ./env
       - uses: ./action-a
         with:
-          MY_NAME: ${{ env.docker_version }}
+          MY_NAME: ${{ env.DOCKER_VERSION }}
